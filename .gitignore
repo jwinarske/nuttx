@@ -30,8 +30,8 @@ core
 /.project
 /pcode
 /tags
+/build
 /tools/build
 /tools/third_party/dirent-*
 /tools/third_party/gperf-*
 .vscode
-

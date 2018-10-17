@@ -149,3 +149,13 @@ add_executable(logparser logparser.c ${SRC_DEPS})
 
 # gencromfs - Generate a CROMFS file system
 add_executable(gencromfs gencromfs.c ${SRC_DEPS})
+
+
+include(GNUInstallDirs)
+install (
+  TARGETS b16 bdf-converter cmpconfig configure 
+    mkconfig mkdeps mksymtab mksyscall mkversion cnvwindeps
+    nxstyle initialconfig logparser gencromfs
+    #kconfig2html # not yet...
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
